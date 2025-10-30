@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rehan Mehta — Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --accent:#0b1220;
+  --muted:#6b7280;
+  --accent-2:#0f4c81;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--accent);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+.container{
+  max-width:980px;
+  margin:36px auto;
+  padding:28px;
+}
+.card{
+  background:var(--card);
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(12,18,30,0.06);
+  padding:28px;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  border-bottom:1px solid #eef2f7;
+  padding-bottom:18px;
+  margin-bottom:18px;
+}
+.brand{
+  display:flex;
+  flex-direction:column;
+}
+.name{
+  font-size:26px;
+  font-weight:800;
+}
+.role{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:13px;
+}
+.contact{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+  font-size:13px;
+  color:var(--muted);
+}
+.badge{
+  background:#f1f7ff;
+  padding:8px 12px;
+  border-radius:999px;
+  font-weight:600;
+  color:var(--accent-2);
+  font-size:13px;
+}
+.layout{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  gap:26px;
+  margin-top:10px;
+}
+.left{
+  border-right:1px solid #f3f5f8;
+  padding-right:18px;
+}
+.section{
+  margin-bottom:18px;
+}
+.section-title{
+  font-weight:700;
+  font-size:13px;
+  margin-bottom:8px;
+}
+.profile{
+  font-size:14px;
+  color:#111827;
+}
+.meta{color:var(--muted);font-size:13px}
+.list{list-style:none;padding:0;margin:0}
+.list li{margin-bottom:10px;font-size:14px}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skill-pill{
+  background:#f6f9ff;
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:13px;
+  color:var(--accent-2);
+  font-weight:600;
+}
+.projects .project{margin-bottom:12px}
+.project-title{font-weight:700;font-size:14px}
+.project-desc{color:var(--muted);font-size:13px;margin-top:4px}
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  margin-top:14px;
+  border-top:1px solid #eef2f7;
+  padding-top:14px;
+  color:var(--muted);
+  font-size:13px;
+}
+.actions{display:flex;gap:10px}
+.btn{
+  border:0;
+  padding:9px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:700;
+  font-size:13px;
+}
+.btn-primary{background:var(--accent-2);color:white}
+.btn-ghost{background:transparent;border:1px solid #e6eef9;color:var(--accent-2)}
+@media (max-width:880px){
+  .layout{grid-template-columns:1fr; padding-top:10px}
+  .left{border-right:0;padding-right:0;border-bottom:1px solid #f3f5f8;padding-bottom:16px;margin-bottom:12px}
+  .header{flex-direction:column;align-items:flex-start;gap:8px}
+  .contact{justify-content:flex-start}
+}
+@media print{
+  body{background:white;color:#000}
+  .container{box-shadow:none;margin:0;padding:0;max-width:100%}
+  .card{box-shadow:none;padding:12px;border-radius:0}
+  .actions{display:none}
+  a::after{content:" (" attr(href) ")"}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card" role="article" aria-labelledby="name">
+    <div class="header">
+      <div class="brand">
+        <div id="name" class="name">Rehan Mehta</div>
+        <div class="role">First-Year B.Tech Student — Computer Science</div>
+      </div>
+      <div class="contact" aria-label="contact and links">
+        <div class="meta">rehanmehta@gmail.com</div>
+        <div class="meta">+91 9990688867</div>
+        <div class="meta">India</div>
+        <a class="badge" href="https://github.com/RehanMehtaIND" target="_blank" rel="noopener">github.com/RehanMehtaIND</a>
+      </div>
+    </div>
+
+    <div class="layout">
+      <aside class="left" aria-label="sidebar">
+        <div class="section">
+          <div class="section-title">Profile</div>
+          <div class="profile">Creative and motivated first-year B.Tech student at Polaris School of Technology. Passionate about software development, game design, and building polished projects. Seeking internships or junior developer roles to apply scripting, web and game-development skills.</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Technical Skills</div>
+          <div class="skills" role="list">
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">Lua</div>
+            <div class="skill-pill">HTML & CSS</div>
+            <div class="skill-pill">Roblox Studio</div>
+            <div class="skill-pill">Chart.js</div>
+            <div class="skill-pill">Git</div>
+            <div class="skill-pill">UI/UX basics</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="meta">Polaris School of Technology</div>
+          <div class="meta">B.Tech, Computer Science (2024 — Present)</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Interests</div>
+          <ul class="list">
+            <li>Basketball</li>
+            <li>Game Development</li>
+            <li>YouTube Content</li>
+            <li>Open-source & Hackathons</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main aria-label="main content">
+        <section class="section projects">
+          <div class="section-title">Projects</div>
+
+          <div class="project">
+            <div class="project-title">Expense Tracker</div>
+            <div class="project-desc">Responsive web app to track and visualize expenses using Chart.js. Repository: <a href="https://github.com/RehanMehtaIND/expensesTracker" target="_blank" rel="noopener">github.com/RehanMehtaIND/expensesTracker</a></div>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Infectimon</div>
+            <div class="project-desc">Game project with collection and battle mechanics. Repo: <a href="https://github.com/RehanMehtaIND/infectimon" target="_blank" rel="noopener">github.com/RehanMehtaIND/infectimon</a></div>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Roblox Tower Defense (WIP)</div>
+            <div class="project-desc">Open-world tower defense integrating story, summon system, ProfileService, VFX, and mini-games.</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Experience & Activities</div>
+          <ul class="list">
+            <li>YouTube creator — DevShastraIND & RehanMehta12</li>
+            <li>Roblox scripting, game design, mini-game systems</li>
+            <li>Basketball — team player, consistent practice</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Strengths & Soft Skills</div>
+          <ul class="list">
+            <li>Fast learner · Creative problem solver · Team player</li>
+            <li>Communication · Leadership · Consistency</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <div class="footer">
+      <div>Portfolio: <a href="https://github.com/RehanMehtaIND" target="_blank" rel="noopener">github.com/RehanMehtaIND</a> · LinkedIn: <a href="https://www.linkedin.com/in/rehan-mehta-31039a362/" target="_blank" rel="noopener">rehan-mehta-31039a362</a></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="downloadPdf">Download PDF</button>
+        <button class="btn btn-ghost" id="printBtn">Print / Save as PDF</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('printBtn').addEventListener('click',function(){window.print()})
+document.getElementById('downloadPdf').addEventListener('click',function(){
+  var url='Rehan_Mehta_Resume.pdf'
+  window.open(url,'_blank')
+})
+</script>
+</body>
+</html>
