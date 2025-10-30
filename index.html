@@ -244,7 +244,6 @@ body{
     <div class="footer">
       <div>Portfolio: <a href="https://github.com/RehanMehtaIND" target="_blank" rel="noopener">github.com/RehanMehtaIND</a> · LinkedIn: <a href="https://www.linkedin.com/in/rehan-mehta-31039a362/" target="_blank" rel="noopener">rehan-mehta-31039a362</a></div>
       <div class="actions">
-        <button class="btn btn-primary" id="downloadPdf">Download PDF</button>
         <button class="btn btn-ghost" id="printBtn">Print / Save as PDF</button>
       </div>
     </div>
@@ -253,10 +252,6 @@ body{
 
 <script>
 document.getElementById('printBtn').addEventListener('click',function(){window.print()})
-document.getElementById('downloadPdf').addEventListener('click',function(){
-  var url='Rehan_Mehta_Resume.pdf'
-  window.open(url,'_blank')
-})
 </script>
 </body>
 </html>
